@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>THE NOUFI Game</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,13 +44,12 @@
           />
         </div>
         <div class="duv">-</div>
-
         <div class="duv">-</div>
         <button class="btn" id="startGame2">Commencer la Partie</button>
       </div>
 
       <div class="screen" id="whoisfirst">
-        <h1 class="title">Choisir une cARTE</h1>
+        <h1 class="title">Choisir une carte</h1>
 
         <p class="sousname">
           Joueur 1 : <span style="font-weight: bold" id="scoreplayer1"></span>
@@ -59,7 +58,6 @@
           Joueur 2 : <span style="font-weight: bold" id="scoreplayer2"></span>
         </p>
         <p class="name" id="player1name"></p>
-        <!-- p1 -->
         <div>
           <img class="card1" id="cardo" src="./assets/cards/f.svg" alt="" />
         </div>
@@ -67,14 +65,30 @@
         <button class="btn" id="chosecard1">CLICK ICI</button>
         <button class="btn" id="chosecard2">CLICK ICI</button>
         <button class="btn" id="next">SUIVANT</button>
-        <!-- p2 -->
       </div>
-      <div class="screen" id="gamescreen"></div>
-      <div class="screen" id="scorescreen"></div>
-    </div>
-    <!-- script  -->
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <div class="screen" id="gamescreen">
+        <div id="player1field">
+          <img class="card1" id="card1" src="./assets/cards/f.svg" />
+          <img class="card1" id="card2" src="./assets/cards/f.svg" />
+          <img class="card1" id="card3" src="./assets/cards/f.svg" />
+          <button class="btn" id="shuffle">COMMENCE</button>
+        </div>
+        <div id="player2field">
+          <img class="card1" id="card4" src="./assets/cards/f.svg" />
+          <img class="card1" id="card5" src="./assets/cards/f.svg" />
+          <img class="card1" id="card6" src="./assets/cards/f.svg" />
+        </div>
+      </div>
+
+      <div class="screen" id="scorescreen">
+        <h1 id="winnerText"></h1>
+        <p id="player1Score"></p>
+        <p id="player2Score"></p>
+        <button class="btn" id="nextRound">Prochaine Manche</button>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

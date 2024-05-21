@@ -123,3 +123,12 @@ p {
 #next {
   display: none;
 }
+#gamescreen {
+  display: none;
+}
+#player2field {
+  margin-top: 10px;
+}
+#player1field {
+  margin-bottom: 4px;
+}
