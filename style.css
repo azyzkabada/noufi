@@ -1,0 +1,125 @@
+body {
+  font-family: "Reddit Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(90deg, #890e25, #af1842, #d42565);
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+.interface {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70vw;
+  height: 70vh;
+  border: white 2px dotted;
+  margin: 20px;
+  border-radius: 30px;
+}
+
+.btn,
+.btn2,
+.input {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  font-family: "Reddit Mono", monospace;
+}
+
+.btn {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn2 {
+  background-color: aliceblue;
+  color: black;
+}
+
+.btn:hover,
+.btn2:hover {
+  background-color: rgb(247, 0, 86);
+  color: white;
+}
+
+.logo {
+  height: 20vh;
+}
+
+.bottums {
+  margin-top: 20px;
+}
+
+.screen,
+.bottums {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.duv {
+  margin: 10px 0;
+  opacity: 0%;
+}
+
+.duv2 {
+  opacity: 0%;
+}
+
+.title {
+  color: white;
+  text-transform: uppercase;
+}
+
+.card1 {
+  width: 200px;
+}
+
+#configscreen {
+  display: none;
+}
+
+#whoisfirst {
+  display: none;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 30px;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  border-radius: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+.sousname {
+  color: white;
+  padding-bottom: 10px;
+}
+
+#chosecard2 {
+  display: none;
+}
+
+#player2title {
+  display: none;
+}
+#next {
+  display: none;
+}

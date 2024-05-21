@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="interface">
+      <div class="screen" id="start">
+        <div class="game">
+          <img class="logo" src="./assets/logo.png" alt="" />
+          <div class="duv">-</div>
+          <div class="duv">-</div>
+          <div class="bottums">
+            <button class="btn" id="start-game">Start Game</button>
+            <div class="duv2">-</div>
+            <button id="Rules" class="btn2">Rules</button>
+          </div>
+        </div>
+      </div>
+      <div class="screen" id="configscreen">
+        <h1 class="title">Configuration de la Partie</h1>
+        <div class="duv">-</div>
+        <div class="players">
+          <input
+            class="input"
+            type="text"
+            id="name1"
+            placeholder="Nom du Joueur 1"
+          />
+          <input
+            class="input"
+            type="text"
+            id="name2"
+            placeholder="Nom du Joueur 2"
+          />
+        </div>
+        <div class="duv">-</div>
+
+        <div class="duv">-</div>
+        <button class="btn" id="startGame2">Commencer la Partie</button>
+      </div>
+
+      <div class="screen" id="whoisfirst">
+        <h1 class="title">Choisir une cARTE</h1>
+
+        <p class="sousname">
+          Joueur 1 : <span style="font-weight: bold" id="scoreplayer1"></span>
+        </p>
+        <p id="player2title" class="sousname">
+          Joueur 2 : <span style="font-weight: bold" id="scoreplayer2"></span>
+        </p>
+        <p class="name" id="player1name"></p>
+        <!-- p1 -->
+        <div>
+          <img class="card1" id="cardo" src="./assets/cards/f.svg" alt="" />
+        </div>
+
+        <button class="btn" id="chosecard1">CLICK ICI</button>
+        <button class="btn" id="chosecard2">CLICK ICI</button>
+        <button class="btn" id="next">SUIVANT</button>
+        <!-- p2 -->
+      </div>
+      <div class="screen" id="gamescreen"></div>
+      <div class="screen" id="scorescreen"></div>
+    </div>
+    <!-- script  -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
